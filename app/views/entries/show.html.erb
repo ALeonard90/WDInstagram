@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @entry.author %>
+</p>
+
+<p>
+  <strong>Photo url:</strong>
+  <%= image_tag @entry.photo_url %>
+</p>
+
+<p>
+  <strong>Date Taken:</strong>
+  <%= link_to @entry.date_taken, @entry.date_taken %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
