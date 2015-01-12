@@ -4,6 +4,7 @@ class EntriesController < ApplicationController
 	end
 
 	def show
+		@entry = Entry.find(params[:id])
 		
 	end 
 
@@ -29,4 +30,5 @@ class EntriesController < ApplicationController
 	private
 		def entry_params
 		params.require(:entry).permit(:author, :photo_url, :date_taken)
+		end 
 end

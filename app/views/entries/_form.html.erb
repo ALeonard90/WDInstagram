@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :date_taken %><br>
-    <%= f.select :date_taken, options_for_select(@entries.map {|e| [e.author, e.id]}) %>
+    <%= f.text_field :date_taken%>
   </div>
   <div class="actions">
     <%= f.submit %>
